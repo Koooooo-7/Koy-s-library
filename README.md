@@ -10,6 +10,6 @@
 *代码规范！*  
 
 ---
-[PEP-8中文版][https://www.cnblogs.com/ajianbeyourself/p/4377933.html#_label0]<br>
-[PEP-8中文版2][https://wiki.woodpecker.org.cn/moin/PythonCodingRule]
+[PEP-8中文版]<br>[https://www.cnblogs.com/ajianbeyourself/p/4377933.html#_label0]<br>
+[PEP-8中文版2]<br>[https://wiki.woodpecker.org.cn/moin/PythonCodingRule]
 ---
