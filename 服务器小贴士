@@ -1,0 +1,8 @@
+SSH默认22端口。
+然后上去一看，被某省某ip当成肉鸡成残疾Orz。
+
+最基础的办法就是更换端口，禁掉22端口。
+另外就是禁掉root用户的登录。
+
+再之后就是fail2ban的安装保护。
+参考https://www.centos.bz/2018/01/centos-7%E5%AE%89%E8%A3%85fail2banfirewalld%E9%98%B2%E6%AD%A2ssh%E7%88%86%E7%A0%B4%E4%B8%8Ecc%E6%94%BB%E5%87%BB/
