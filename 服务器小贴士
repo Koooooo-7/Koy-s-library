@@ -3,6 +3,46 @@ SSH默认22端口。
 
 最基础的办法就是更换端口，禁掉22端口。
 另外就是禁掉root用户的登录。
+1. 添加用户
+adduser username
+2. 设置密码
+passwd ***
+
+3.配置权限，设置新增用户使用可以用sudo化身root用户
+
+//第一步 找到sudoers文件
+whereis sudoers
+//第二步 获取修改权限  如果写入时显示是readonly的话需要修改
+chmod 777 /etc/sudoers
+
+//第三步 打开文件并编辑
+vim /etc/sudoers
+//找到root    ALL=(ALL)    ALL一行 在下面添加新增的用户按照root的格式
+username    ALL=(ALL)    ALL
+//保存退出
+:wq
+//第四步 修改权限为只读
+chmod 444 /etc/sudoers
+//最后一步 刷新权限
+systemctl restart sshd
+
+4.此时新增的用户已经可以使用sudo化身root用户了,最后就是禁止root登录
+//找到sshd_config文件
+whereis ssh
+//获取最高权限
+chmod 777 /etc/ssh/sshd_config
+//编辑文件 找到PermitRootLogin yes一行 将yes修改为no
+PermitRootLogin no
+//保存退出
+:wq
+//修改权限为只读
+chmod 444 /etc/ssh/sshd_config
+//刷新权限
+systemctl restart sshd
+//此时root用户已经无法登录
+
+禁用root用户，创建新用户并添加sudo权限参考https://blog.csdn.net/qq_34627459/article/details/71601005
 
 再之后就是fail2ban的安装保护。
 参考https://www.centos.bz/2018/01/centos-7%E5%AE%89%E8%A3%85fail2banfirewalld%E9%98%B2%E6%AD%A2ssh%E7%88%86%E7%A0%B4%E4%B8%8Ecc%E6%94%BB%E5%87%BB/
+
