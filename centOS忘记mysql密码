@@ -1,0 +1,49 @@
+1.vi /etc/my.cnf
+
+2.在[mysqld]中添加
+
+skip-grant-tables
+
+例如：
+
+[mysqld]
+skip-grant-tables
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+3.重启mysql
+
+service mysql restart
+
+4.用户无密码登录
+
+mysql -uroot -p (直接点击回车，密码为空)
+
+5.选择数据库
+
+use mysql;
+
+6.修改root密码
+
+update user set authentication_string=password('123456') where user='root';
+
+7.执行
+
+ flush privileges;
+
+8.退出
+
+exit;
+
+9.删除
+
+skip-grant-tables
+
+10.重启mysql
+
+service mysql restart
+
+
+
+
+参考https://blog.csdn.net/huanghaifei922/article/details/54644818
