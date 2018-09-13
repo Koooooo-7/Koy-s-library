@@ -20,3 +20,9 @@ create database wordpress;
     我是直接选择了安装插件($yum install -y php-mysql)。
     这时候又遇到了 php70w-common conflicts with php-common-5.4.16-45.el7.x86_64
     的问题，这是因为有PHP5.4没有卸载干净的问题，这时候可以直接  $yum install -y php70w-mysql 指定要安装的版本就好了。
+    然后发现还是有这个问题，然后我就类，把php.ini的扩展也加上去了  extension=mysql.os 然后，重启了php-fpm和nginx，然后就可以
+    登录进去了，而且是全英文的。
+   按照步骤来结果说缺失了wp-config.php，我有点怀疑我是不是装了个假的wordpress，然后看了他不能自动写入的内容的代码，说要我
+   自己在目录下创建一个wp-config.php,我发现就是wp-config-sample.php的内容，然后我就直接复制了这个并且重命名了，然后就好了。
+   之后就可以进入管理后台了。
+   至于到底是哪个地方出了问题，目前还有点迷...。
