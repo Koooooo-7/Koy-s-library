@@ -1,0 +1,19 @@
+搭建Wordpress我是用的LNMP，毕竟之前小站直接就搭好了这个。
+当然直接用就好了。
+
+1.下载Wordpress
+
+
+
+
+2.首先创建一个数据库给wordpress 
+create database wordpress;
+然后去配置给wordpress；
+网上的教程都是去找wordpress目录下的wp-config.php ，但是我下载的版本是比较新的（?）吗，配置的文件是wp-config-sample.php。
+
+ 问题:
+    我访问我的域名/index.php时，wordpress会有
+    Your PHP installation appears to be missing the MySQL extension which is required by WordPress.
+    提示，我发现是mysql和php的扩展问题，这时候需要去安装php-mysql ($yum install -y php-mysql)
+    这时候又遇到了 php70w-common conflicts with php-common-5.4.16-45.el7.x86_64
+    的问题，这是因为有PHP5.4没有卸载干净的问题，这时候可以直接  $yum install -y php70w-mysql 指定要安装的版本就好了。
