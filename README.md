@@ -45,4 +45,4 @@
 
 
 ### 目前在用的图床  
-[路过图床，希望不会挂掉Orz][https://imgchr.com/]
+路过图床，希望不会挂掉Orz(https://imgchr.com/)
