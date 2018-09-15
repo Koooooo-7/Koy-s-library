@@ -9,5 +9,9 @@
     datadir=/var/lib/mysql
     socket=/var/lib/mysql/mysql.sock
     user=mysql
+    然后记得重启一下 systemctl restart mysqld
+    
+    允许开启远程访问
     grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option; 
     最好不要直接用root用户和弱密码登录。 ` mysqlroot  XXX@XXX
+    然后记得重启一下 systemctl restart mysqld
