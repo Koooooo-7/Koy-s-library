@@ -42,3 +42,7 @@
 | 天狼| 周4 | bilibili |
 | 杀天 | 周5| bilibili |
 | 工作细胞~~~ | 周0 | kankanwu/100 |
+
+
+### 目前在用的图床  
+[路过图床，希望不会挂掉Orz][https://imgchr.com/]
