@@ -45,4 +45,4 @@
 
 
 ### 目前在用的图床  :rainbow:
-[路过图床，希望不会挂掉]Orz(https://imgchr.com/)
+[国外一个图床，希望不会挂掉]Orz(https://postimages.org/)
