@@ -11,4 +11,5 @@
     user=mysql
     grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option; 
     最好不要直接用root用户和弱密码登录。 ` 
-<font color=#ffffff > mysqlroot  A...@... </font>
+<font color=#ffffff>mysqlroot  A...@... </font>
+<font color=#00ffff size=72>color=#00ffff</font>
