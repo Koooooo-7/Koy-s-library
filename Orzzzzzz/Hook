@@ -1,0 +1,17 @@
+在看TP5的框架的时候，发现里面有地方用到了HOOK，
+然后检索发现并没有add_action，而埋下的HOOK，也说明
+开发者还是想到了让后来用的人可以在这里做一些“其他的事情的”。
+HOOK 
+在wordpress里面分为Action Hook  和 Filter Hook
+给我的感觉，HOOK
+其实add_action就是一个封装了的函数，直接通过do_action调用。
+而调用的就是add_action中传进去的不同的函数。
+
+而Action Hook 和 Filter Hook  的区别是一个没有返回值Action Hook，一个有返回值Fileter Hook,
+无返回值的可以抽离出去做一些和本方法无关的事情，简化代码，抽离弱相关的逻辑。
+Fileter Hook也差不多，只是一个"过滤器",本方法的主功能/逻辑上而言，他是应该是要被弱化掉的。
+
+此外，钩子上的方法们是有优先级的，这一点要注意，如果优先级撞上了，没有按照预料的顺序去执行，那就有些凉凉了。
+
+
+https://www.wpdaxue.com/wordpress-hook.html
