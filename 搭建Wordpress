@@ -44,4 +44,4 @@ create database wordpress;
        define("FS_CHMOD_FILE", 0777); 
        输入Esc之后输入：wq!退出vim编辑器
        
-       然后点更新就可以直接更新了，然后我就把权限写回来755了。
+       然后点更新就可以直接更新了，然后我就把权限写回来只读444了。
