@@ -1,0 +1,18 @@
+如果直接在后台设置固定域名，会发现nginx找不到地址而报出404错误。
+我所用到的解决方案:
+在 /etc/nginx/config.d/mysit.conf文件的 loction \ {} 中添加
+if (-f $request_filename/index.html){
+    rewrite (.*) $1/index.html break;
+}
+
+if (-f $request_filename/index.php){
+    rewrite (.*) $1/index.php;
+}
+
+if (!-f $request_filename){
+    rewrite (.*) /index.php;
+}
+
+参考https://www.cnblogs.com/enone/archive/2013/04/13/3017671.html
+
+其他的说有伪静态的问题，有服务器端配置问题这样的，我目前还没有遇到，只是直接加入这3个匹配规则就好了。
