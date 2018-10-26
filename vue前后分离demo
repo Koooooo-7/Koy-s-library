@@ -1,0 +1,145 @@
+测试测试。
+
+
+前端。
+
+  <div class="layui-tab-item layui-show " id="app1">
+                    <ul class="layui-row layui-col-space30 video-all" >
+                        <li class="layui-col-md3 layui-col-xs6"  v-for="item in datas">
+                            <div class="cover-box">
+                                <div class="cover-img">
+                                    <a href="###" target="_blank">
+                                        <img src="###">
+                                    </a>
+                                    <div class="cover-fields-a tl">
+                                        <i class="iconfont icon-shipin"></i>
+                                    </div>
+                                </div>
+                                <div class="cover-component layui-layer-padding">
+                                    <a href="/firefly/public/product/product/detail/id/33.html" target="_blank" ><h4>{{item.post_title}}</h4></a>
+                                    <p v-text=""><small >{{item.post_name}}</small></p>
+                                    <a href="javascript:;" class="layui-btn layui-btn-primary layui-btn-xs">查看视频</a>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                
+                
+ <script>                
+                
+var vmm =new Vue({
+        el: "#app1",
+        data: {
+            datas: []
+        },
+        mounted:function(){
+            this.showData();
+        },
+        methods:{
+            showData:function () {
+                jQuery.ajax({
+                    type: 'post',
+                    url: "{:url('XX/XXX/XX')}",
+                    datatype:"json",
+                    success: function (data) {
+                        console.log(data);
+                        vmm.datas = data;
+                    },
+                    error:function (res) {
+                        console.log(res);
+                    }
+                });
+            }
+          }
+    });
+ </script>  
+ 
+ 
+ 
+数据形式 
+[{id: 221, post_status: 0, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539171660,…},…]
+0
+:
+{id: 221, post_status: 0, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539171660,…}
+comment_count
+:
+0
+create_time
+:
+1539171660
+delete_time
+:
+0
+id
+:
+221
+more
+:
+null
+post_contact
+:
+"15281111111"
+post_contact_get
+:
+0
+post_content
+:
+"这里是简介，看起来好像很帅的样子阿。"
+post_focus
+:
+0
+post_img_url
+:
+"xx836119cb6d077adf02f61924f377.jpg"
+post_like
+:
+0
+post_name
+:
+"黑曼巴"
+post_status
+:
+0
+post_tag
+:
+"{"tags":[{"tag":"\u65e0\u654c\u5927\u795e"},{"tag":"\u52c7\u95ef\u5929\u6daf"}]}"
+post_title
+:
+"科比"
+post_year
+:
+11
+recommended
+:
+0
+update_time
+:
+1539171660
+user_id
+:
+1
+1
+:
+{id: 222, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539173683,…}
+2
+:
+{id: 223, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539217876,…}
+3
+:
+{id: 226, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539243558,…}
+4
+:
+{id: 227, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539243558,…}
+5
+:
+{id: 228, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539258235,…}
+6
+:
+{id: 229, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539565742,…}
+7
+:
+{id: 230, post_status: 1, recommended: 0, post_focus: 0, post_like: 0, create_time: 1539996845,…}
