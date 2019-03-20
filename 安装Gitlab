@@ -1,5 +1,10 @@
 搭建自己的Git仓库。
+前提：先搭建nginx
 
+
+gitlab配置 /etc/gitlab/gitlab.rb
+配置重载 gitlab-ctl reconfigure
+启动/停止 sudo gitlab-ctl start/stop
 参考当然是官方文档啦。
 https://about.gitlab.com/install/#centos-7
 步骤
