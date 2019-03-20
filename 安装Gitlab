@@ -15,4 +15,35 @@ https://about.gitlab.com/install/#centos-7
 2.添加Gitlab仓库
   安装包安装Gitlab
   这里可以设置页面端你要浏览的域名。
- 
+  
+  
+  
+ 配置gitlab使用非绑定的nginx（即使用自己服务器上装的nginx）
+ 参考  https://docs.gitlab.com/omnibus/settings/nginx.html
+      https://blog.csdn.net/qq_34894188/article/details/80468889
+      按照官网的说明Using a non-bundled web-server 跟着步奏走：
+
+1).Disable bundled Nginx  使绑定的nginx失效
+
+vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
+
+2).Set the username of the non-bundled web-server user 设置gitlab的用户名为你的webserver
+
+还是在gitlab.rb中添加：web_server['external_users'] = ['nginx'] 我的ngxin的用户名即（nginx的server_name）。
+
+3).Add the non-bundled web-server to the list of trusted proxies  将你本地的webserver添加到gitlab的信任代理列表中
+
+还是在gitlab.rb中添加：gitlab_rails['trusted_proxies'] = [ '127.0.0.1' ](这里是一个数组，可以配置多个，我的就是本机ip)
+
+4).(Optional) Set the right gitlab-workhorse settings if using Apache  (可选)设置gitlab的监听端口，我直接跳过了。
+
+ 还是在gitlab.rb中添加：
+
+  gitlab_workhorse['listen_network'] = "tcp"
+
+  gitlab_workhorse['listen_addr'] = "127.0.0.1:8181"  这里8181是默认的，所以你不想变的话，这个第4步是可选的
+
+   到这里gitlab的配置就完成了，我们重载配置文件,执行命令：gitlab-ctl reconfigure等待完成。
+   
+   
+    
