@@ -1,0 +1,13 @@
+搭建自己的Git仓库。
+
+参考当然是官方文档啦。
+https://about.gitlab.com/install/#centos-7
+步骤
+1 安装依赖
+  配置防火墙
+  顺便开启邮件服务直接用的postfix,没有去改成阿里云或者疼讯
+  
+2.添加Gitlab仓库
+  安装包安装Gitlab
+  这里可以设置页面端你要浏览的域名。
+ 
