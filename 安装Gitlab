@@ -80,9 +80,8 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
             执行备份
             sudo gitlab-rake gitlab:backup:restore BACKUP=时间戳-就是那个备份的文件-ee
             然后让你确认还是反悔，一路yes就好了。
-            重启服务。
+            重启服务并检测配置文件。
             sudo gitlab-ctl restart
-            检测状态
             sudo gitlab-rake gitlab:check SANITIZE=true
             
    
