@@ -54,7 +54,10 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
 2.执行
   前期准备   sudo yum install rsync 安装一个必要的工具Rsync （实际上应该是自带了，但是我还是把它更新了。）
             确保tar的版本在1.3以上，我的源里面没有，所以单独去下载的tar-13.2的tar.gz包ftp传上去安装更新的。
+            下载tar https://www.gnu.org/software/tar/ 官网 然后找镜像
+            http://mirrors.ustc.edu.cn/gnu/tar/
             如果在编译安装的时候遇到 no acceptable C compiler found in $PATH 那可能是你没有安装GCC。
+            
   
    sudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production
    
