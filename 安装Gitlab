@@ -64,6 +64,9 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
             可以make在make install了。
             检查tar 版本  tar --version
             
+            直接执行sudo gitlab-rake gitlab:backup:create 进行备份 即在设置的目录（我设置的/home/gitlab/backup）下发现备份文件。
+  
+            
    
    
 
