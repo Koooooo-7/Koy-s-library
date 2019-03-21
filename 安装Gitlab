@@ -48,7 +48,7 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
    
    
  
-配置gitlab 备份
+配置gitlab 备份仓库
 参考https://docs.gitlab.com/omnibus/settings/backups.html
 1.更改备份目录（可选） 默认是/var/opt/gitlab/backups
 2.执行
@@ -85,7 +85,19 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
             sudo gitlab-rake gitlab:check SANITIZE=true
             
    
-   
+   配置gitlab 备份配置文件 参考https://docs.gitlab.com/omnibus/settings/backups.html
+   因为配置文件都在/etc/gitlab里面，所以直接就备份这一整个目录就好啦。
+   直接当场打包成tar
+   sudo sh -c 'umask 0077; tar -cf $(date "+etc-gitlab-%s.tar") -C / etc/gitlab'
+    (我生成的文件名是etc-gitlab-时间戳.tar)
+    
+    周期性备份使用Crontab
+    开启一个事务
+    sudo crontab -e -u root
+    例如：工作日天天早上备份（美国工作日周二-周六）
+    15 04 * * 2-6  umask 0077; tar cfz /secret/gitlab/backups/$(date "+etc-gitlab-\%s.tgz") -C / etc/gitlab
+    这个需要去找一写一写看一看Cron表达式。
+    
 
    
    
