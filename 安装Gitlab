@@ -65,7 +65,25 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
             检查tar 版本  tar --version
             
             直接执行sudo gitlab-rake gitlab:backup:create 进行备份 即在设置的目录（我设置的/home/gitlab/backup）下发现备份文件。
-  
+            
+            恢复备份 参考https://docs.gitlab.com/ee/raketasks/backup_restore.html
+            假设是在另外一台机器上（没有改配置文件的备份地址的话）,那么就要拷贝到/var/opt/gitlab/backups/这个默认目录。
+            sudo cp 11493107454_2018_04_25_10.6.4-ce_gitlab_backup.tar /var/opt/gitlab/backups/
+            然后授权给git用户
+            sudo chown git.git /var/opt/gitlab/backups/11493107454_2018_04_25_10.6.4-ce_gitlab_backup.tar
+            
+            关闭以下两个进程
+            sudo gitlab-ctl stop unicorn
+            sudo gitlab-ctl stop sidekiq
+            # Verify查看是否关闭成功
+            sudo gitlab-ctl status
+            执行备份
+            sudo gitlab-rake gitlab:backup:restore BACKUP=时间戳-就是那个备份的文件-ee
+            然后让你确认还是反悔，一路yes就好了。
+            重启服务。
+            sudo gitlab-ctl restart
+            检测状态
+            sudo gitlab-rake gitlab:check SANITIZE=true
             
    
    
