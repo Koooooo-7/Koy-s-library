@@ -60,7 +60,8 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
             安装完GCC发现configure: error: you should not run configure as root (set FORCE_UNSAFE_CONFIGURE=1 in environment to bypass this check)
             需要
             export FORCE_UNSAFE_CONFIGURE=1
-            然后再./configure一下，就可以make在make install了。
+            然后再./configure --prefix=/usr --bindir=/bin --libexecdir=/usr/bin一下，指明安装路径覆盖旧版本。
+            可以make在make install了。
             检查tar 版本  tar --version
             
    
