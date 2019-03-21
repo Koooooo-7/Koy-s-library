@@ -50,8 +50,10 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
  
 配置gitlab 备份仓库
 参考https://docs.gitlab.com/omnibus/settings/backups.html
+
 1.更改备份目录（可选） 默认是/var/opt/gitlab/backups
 2.执行
+  参考 https://docs.gitlab.com/ee/raketasks/backup_restore.html
   前期准备   sudo yum install rsync 安装一个必要的工具Rsync （实际上应该是自带了，但是我还是把它更新了。）
             确保tar的版本在1.3以上，我的源里面没有，所以单独去下载的tar-13.2的tar.gz包ftp传上去安装更新的。
             下载tar https://www.gnu.org/software/tar/ 官网 然后找镜像
