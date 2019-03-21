@@ -96,7 +96,8 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
     sudo crontab -e -u root
     例如：工作日天天早上备份（美国工作日周二-周六）
     15 04 * * 2-6  umask 0077; tar cfz /secret/gitlab/backups/$(date "+etc-gitlab-\%s.tgz") -C / etc/gitlab
-    这个需要去找一写一写看一看Cron表达式（在线生成器http://cron.qqe2.com/）。
+    
+    这个需要去找一写一写看一看Cron表达式（corn从左到右（用空格隔开）：秒 分 小时 月份中的日期 月份 星期中的日期 年份）。
     
 
    
