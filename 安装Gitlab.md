@@ -81,7 +81,7 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
             然后再./configure --prefix=/usr --bindir=/bin --libexecdir=/usr/bin一下，指明安装路径覆盖旧版本。
             可以make再make install了。
             检查tar 版本  tar --version
-            
+ #### 进行备份      
             直接执行sudo gitlab-rake gitlab:backup:create 进行备份 即在设置的目录（我设置的/home/gitlab/backup）下发现备份文件。
             
             恢复备份 参考https://docs.gitlab.com/ee/raketasks/backup_restore.html
