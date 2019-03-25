@@ -16,7 +16,7 @@
 
 ### 配置配置
 &emsp;[iptables配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/iptables%E9%85%8D%E7%BD%AE)  
-&emsp;[服务器搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/LNMP)  
+&emsp;[服务器root权限配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B0%8F%E8%B4%B4%E5%A3%AB)    
 
       
 ### 代码代码  
