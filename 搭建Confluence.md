@@ -32,17 +32,19 @@ $ sudo vim /etc/my.cnf.d/client.cnf ---> # 在[client]下面添加如下
 
     default-character-set=utf8
 进行安装配置
-$ sudo mysql_secure_installation
+```$ sudo mysql_secure_installation
 Remove anonymous users? [Y/n] <– 是否删除匿名用户，回车
 Disallow root login remotely? [Y/n] <–是否禁止root远程登录,回车,
 Remove test database and access to it?[Y/n] <– 是否删除test数据库，回车
 Reload privilege tables now? [Y/n] <– 是否重新加载权限表，回车
+```
 创建数据库、用户名和密码
-create databaseconfluence default character set utf8 collate utf8_bin;
+`create databaseconfluence default character set utf8 collate utf8_bin;`
 
 赋予confluence用户任意主机访问confluence数据库，密码是admin
-grant all on confluence.* to 'admin'@'%' identified by 'admin';
+```grant all on confluence.* to 'admin'@'%' identified by 'admin';
 grant all on confluence.* to 'admin'@'localhost' identified by'admin';
+```
 权限刷新
 flush privileges;
 查看用户表
