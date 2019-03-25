@@ -43,8 +43,8 @@ Reload privilege tables now? [Y/n] <– 是否重新加载权限表，回车
 
 赋予confluence用户任意主机访问confluence数据库，密码是admin
 ```
-grant all on confluence.* to 'admin'@'%' identified by 'admin';
-grant all on confluence.* to 'admin'@'localhost' identified by'admin';
+grant all on confluence.* to 'admin'@'%' identified by 'admin';   允许远程登录
+grant all on confluence.* to 'admin'@'localhost' identified by'admin';  允许本地登录
 ```
 权限刷新
 flush privileges;
