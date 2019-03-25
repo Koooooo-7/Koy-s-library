@@ -126,8 +126,10 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
 和用Python/PHP/JAVA的工具包的设置项没有什么不同。
 ```
 gitlab_rails['smtp_enable'] = true
-官方手册调用的smtp.exmail.qq.con应该换成"smtp.qq.com"
-gitlab_rails['smtp_address'] = "smtp.exmail.qq.com" 
+```
+官方手册调用的smtp.exmail.qq.con应该换成"smtp.qq.com"不然会一直SMTPAuthenticationError535报错。
+~~gitlab_rails['smtp_address'] = "smtp.exmail.qq.com"~~
+```gitlab_rails['smtp_address'] = "smtp.qq.com"
 gitlab_rails['smtp_port'] = 465
 gitlab_rails['smtp_user_name'] = "xxxx@xx.com"
 gitlab_rails['smtp_password'] = "password"(指的是授权码)
