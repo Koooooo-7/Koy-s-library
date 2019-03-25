@@ -52,3 +52,7 @@ select user,host,password from mysql.user;
 2.安装JDK1.8
   之前有写过安装过程，[这里](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85JDK1.8u201)。
   
+  
+### 开始安装Confluence
+下载，可以下载了传上去，也可以直接下载wget下载。
+wget https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-6.14.1-x64.bin
