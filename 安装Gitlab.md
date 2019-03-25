@@ -146,5 +146,8 @@ gitlab-rails console
 irb(main):003:0> Notify.test_email('destination_email@address.com', 'Message Subject', 'Message Body').deliver_now
 ```
    
-   
+### Gitlab升级
+[官方文档](https://about.gitlab.com/update/#centos-7)
+1.备份
+2.下载最新版本(升级)
     
