@@ -11,7 +11,7 @@
 &emsp;[搭建Wordpress](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%90%AD%E5%BB%BAWordpress)    
 &emsp;[科学上网&搭建小站.md](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%26%E6%90%AD%E5%BB%BA%E5%B0%8F%E7%AB%99.md)  
 &emsp;[mitmproxy单机配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/mitmproxy%E8%AF%95%E7%8E%A9)  
-&emsp;[GitLab搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85Gitlab.md)
+&emsp;[GitLab搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85Gitlab.md)  
 &emsp;[Confluence搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%90%AD%E5%BB%BAConfluence.md)
 
 
