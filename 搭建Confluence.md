@@ -92,6 +92,7 @@ JDBC链接，账号root密码123456
 更改JDBC链接方式 jdbc:mysql://localhost/confluence?sessionVariables=tx_isolation='READ-COMMITTED'
 _参考https://blog.csdn.net/u013952133/article/details/81634978_
 
+然后设置管理员账号，完成！！！
 
 ### 关闭Confluence sh /opt/atlassian/confluence/bin/stop-confluence.sh
 ### 开启Confluence sh /opt/atlassian/confluence/bin/start-confluence.sh
