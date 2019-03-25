@@ -1,26 +1,19 @@
 # Style
-#  杂货铺。  
+#  杂货铺or图书馆。  
 #  记录自己用到的遇到过的各种坑。
 #  一些自己平时写的小代码。
+#  自己的一些搭建过程。
     
       
         
           
-#  PEP-8规范  
-
+### PEP-8规范  
 *代码规范！*  
-
 ---
-[PEP-8中文版]<br>[https://www.cnblogs.com/ajianbeyourself/p/4377933.html#_label0]<br>
-[PEP-8中文版2]<br>[https://wiki.woodpecker.org.cn/moin/PythonCodingRule]
+[PEP-8中文版](https://www.cnblogs.com/ajianbeyourself/p/4377933.html#_label0)<br>
+[PEP-8中文版2](https://wiki.woodpecker.org.cn/moin/PythonCodingRule)
 ---
 <br>  
-   
-     
-       
-       
-
-
 # 追番记录
 ## May
 | 番名 | 资源可看时间 | 地址
