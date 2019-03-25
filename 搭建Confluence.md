@@ -69,8 +69,9 @@ chmod +x atlassian-confluence-6.14.1-x64.bin
 lsof -i:8090
 注意firewalld防火墙的8090端口有没有开放...。
 此时访问服务器8090端口已经可以看到界面了。
-这时候开始破解
 ```
+
+### 破解过程
 ```
 参考https://blog.csdn.net/XunCiy/article/details/81981944
     https://blog.csdn.net/Dsky7/article/details/87717684
