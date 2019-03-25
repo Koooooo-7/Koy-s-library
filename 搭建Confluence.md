@@ -57,13 +57,31 @@ select user,host,password from mysql.user;
     https://blog.csdn.net/qq_34889607/article/details/81118106
 下载，可以下载了传上去，也可以直接下载wget下载。
 wget https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-6.14.1-x64.bin
+```
 给予安装权限
 chmod +x atlassian-confluence-6.14.1-x64.bin 
 进行安装./atlassian-confluence-6.14.1-x64.bin 
 使用了uses default settings即1
- 查看端口
- lsof -i:8090
- 注意firewalld防火墙的8090端口有没有开放...。
+查看端口
+lsof -i:8090
+注意firewalld防火墙的8090端口有没有开放...。
+此时访问服务器8090端口已经可以看到界面了。
+这时候开始破解
+``
+参考https://blog.csdn.net/XunCiy/article/details/81981944
+    https://blog.csdn.net/Dsky7/article/details/87717684
+破解的生成器：https://pan.baidu.com/s/1pJX9VjovMiTl0o1VyAaitw   m2jz   
+具体破解步骤
+运行jira_keygen.jar，
+将ServerID粘贴填入，
+姓名Name、邮箱Email、组织Organization可随意填写，也可根据实际情况填写，会作为系统信息显示，但不影响破解，
+然后点击.gen!，生成key
+将下载的原atlassian-extras-decoder-版本可能不一样.jar（建议先拷贝个副本备份）更名为atlassian-extras-2.2.2.jar
+然后点击.patch，并选择atlassian-extras-2.2.2.jar打开，
+提示Jar successfully patched，并且生成了一个.bak文件
+然后改回原来的名字把原来的给换掉。
+
+
  
 
 
