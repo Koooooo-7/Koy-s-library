@@ -77,20 +77,28 @@ lsof -i:8090
 具体破解步骤
 运行jira_keygen.jar，
 将ServerID粘贴填入，
-姓名Name、邮箱Email、组织Organization可随意填写，也可根据实际情况填写，会作为系统信息显示，但不影响破解，
-然后点击.gen!，生成key
-将下载的原atlassian-extras-decoder-版本可能不一样.jar（建议先拷贝个副本备份）更名为atlassian-extras-2.2.2.jar
-然后点击.patch，并选择atlassian-extras-2.2.2.jar打开，
-提示Jar successfully patched，并且生成了一个.bak文件
-然后改回原来的名字把原来的给换掉。
+姓名Name、邮箱Email、组织Organization可随意填写，会作为系统信息显示，但不影响破解，
+然后点击.gen!，生成key。
 ```
+#### 生成破解文件
+将/opt/atlassian/confluence/confluence/WEB-INF/lib/下的  
+原__atlassian-extras-decoder-版本可能不一样.jar__（建议先拷贝个副本备份）  
+我的为_atlassian-extras-decoder-v2-3.4.1.jar_  
+更名为atlassian-extras-2.4.jar  
+然后点击.patch，并选择atlassian-extras-2.4.jar打开，<如果你不改这个名字，生成器也找不到你，找到了也报错。>  
+提示Jar successfully patched，并且生成了一个.bak文件。  
+把生成的atlassian-extras-2.4.jar改回原来的名字，替换掉/opt/atlassian/confluence/confluence/WEB-INF/lib/下的原文件。  
+重启Confluence。  
+
 然后继续安装，发现缺少mysql-connection-java的驱动jar包，  
 根据Confluence[官网文档](https://confluence.atlassian.com/doc/database-jdbc-drivers-171742.html)说的，  
-跑去阿里云的maven仓库下了一个5.1.42版本。  
-JDBC链接，账号root密码123456  
-测试链接发现报错  
-~~不正确的隔离级别您的数据库必须使用'READ-COMMITTED'作为默认隔离级别~~  
-按照[官网文档](https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html)我发现my.cnf配置我已经设置了，就用了下面的办法。  
+跑去阿里云的maven仓库下了一个5.1.42版本。
+
+
+再用JDBC链接，账号root 密码123456  
+测试链接发现报错 如下： 
+~~不正确的隔离级别您的数据库必须使用'READ-COMMITTED'作为默认隔离级别~~  。
+按照[官网文档](https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html)我发现my.cnf配置我已经设置了，就用了下面的另一个办法。  
 更改JDBC链接方式 jdbc:mysql://localhost/confluence?sessionVariables=tx_isolation='READ-COMMITTED'
 _参考https://blog.csdn.net/u013952133/article/details/81634978_
 
