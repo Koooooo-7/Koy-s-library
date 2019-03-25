@@ -67,7 +67,8 @@ lsof -i:8090
 注意firewalld防火墙的8090端口有没有开放...。
 此时访问服务器8090端口已经可以看到界面了。
 这时候开始破解
-``
+```
+```
 参考https://blog.csdn.net/XunCiy/article/details/81981944
     https://blog.csdn.net/Dsky7/article/details/87717684
 破解的生成器：https://pan.baidu.com/s/1pJX9VjovMiTl0o1VyAaitw   m2jz   
@@ -80,6 +81,21 @@ lsof -i:8090
 然后点击.patch，并选择atlassian-extras-2.2.2.jar打开，
 提示Jar successfully patched，并且生成了一个.bak文件
 然后改回原来的名字把原来的给换掉。
+```
+然后继续安装，发现缺少mysql-connection-java的驱动jar包，
+根据Confluence[官网文档](https://confluence.atlassian.com/doc/database-jdbc-drivers-171742.html)说的，
+跑去阿里云的maven仓库下了一个5.1.42版本。
+JDBC链接，账号root密码123456
+测试链接发现报错
+~~不正确的隔离级别您的数据库必须使用'READ-COMMITTED'作为默认隔离级别~~
+按照[官网文档](https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html)我发现my.cnf配置我已经设置了，就用了下面的办法。
+更改JDBC链接方式 jdbc:mysql://localhost/confluence?sessionVariables=tx_isolation='READ-COMMITTED'
+
+
+
+### 关闭Confluence sh /opt/atlassian/confluence/bin/stop-confluence.sh
+### 开启Confluence sh /opt/atlassian/confluence/bin/start-confluence.sh
+
 
 
  
