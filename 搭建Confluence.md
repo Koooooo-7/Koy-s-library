@@ -3,8 +3,7 @@
 Confluence是一个团队wiki管理工具，可以归纳整理很多内容。
 
 系统  CentOS 7.2
-
-
+安装 Confluence 6.14.1
 1.安装Mysql  
 ```sudo yum install -y mariadb mariadb-server```
 启动并且开机启动
@@ -54,5 +53,17 @@ select user,host,password from mysql.user;
   
   
 ### 开始安装Confluence
+参考https://blog.csdn.net/Dsky7/article/details/87717684
+    https://blog.csdn.net/qq_34889607/article/details/81118106
 下载，可以下载了传上去，也可以直接下载wget下载。
 wget https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-6.14.1-x64.bin
+给予安装权限
+chmod +x atlassian-confluence-6.14.1-x64.bin 
+进行安装./atlassian-confluence-6.14.1-x64.bin 
+使用了uses default settings即1
+ 查看端口
+ lsof -i:8090
+ 注意firewalld防火墙的8090端口有没有开放...。
+ 
+
+
