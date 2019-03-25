@@ -7,9 +7,8 @@
 
 
 ### 搭建小记
-
-    *  [LNMP搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/LNMP)
-    *  导出为一个html格式的文件，样式一点也不会丢失
+&nbsp;&nbsp;[LNMP搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/LNMP)
+导出为一个html格式的文件，样式一点也不会丢失
     
       
         
