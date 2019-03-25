@@ -90,7 +90,7 @@ JDBC链接，账号root密码123456
 ~~不正确的隔离级别您的数据库必须使用'READ-COMMITTED'作为默认隔离级别~~  
 按照[官网文档](https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html)我发现my.cnf配置我已经设置了，就用了下面的办法。  
 更改JDBC链接方式 jdbc:mysql://localhost/confluence?sessionVariables=tx_isolation='READ-COMMITTED'
-
+_参考https://blog.csdn.net/u013952133/article/details/81634978_
 
 
 ### 关闭Confluence sh /opt/atlassian/confluence/bin/stop-confluence.sh
