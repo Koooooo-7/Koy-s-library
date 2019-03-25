@@ -42,7 +42,8 @@ Reload privilege tables now? [Y/n] <– 是否重新加载权限表，回车
 `create databaseconfluence default character set utf8 collate utf8_bin;`
 
 赋予confluence用户任意主机访问confluence数据库，密码是admin
-```grant all on confluence.* to 'admin'@'%' identified by 'admin';
+```
+grant all on confluence.* to 'admin'@'%' identified by 'admin';
 grant all on confluence.* to 'admin'@'localhost' identified by'admin';
 ```
 权限刷新
@@ -82,8 +83,11 @@ lsof -i:8090
 ```
 #### 生成破解文件
 将/opt/atlassian/confluence/confluence/WEB-INF/lib/下的  
-原__atlassian-extras-decoder-版本可能不一样.jar__（建议先拷贝个副本备份）  
-我的为_atlassian-extras-decoder-v2-3.4.1.jar_  
+原
+_atlassian-extras-decoder-版本可能不一样.jar_
+（建议先拷贝个副本备份）  
+我的为
+_atlassian-extras-decoder-v2-3.4.1.jar_  
 更名为atlassian-extras-2.4.jar  
 然后点击.patch，并选择atlassian-extras-2.4.jar打开，<如果你不改这个名字，生成器也找不到你，找到了也报错。>  
 提示Jar successfully patched，并且生成了一个.bak文件。  
