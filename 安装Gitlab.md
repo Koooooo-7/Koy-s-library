@@ -102,6 +102,26 @@ vi /etc/gitlab/gitlab.rb 添加：nginx['enable'] = false
     这个需要去找一写一写看一看Cron表达式（corn从左到右（用空格隔开）：秒 分 小时 月份中的日期 月份 星期中的日期 年份 后面跟上<执行权限，执行任务>）。
     
 
+Gitlab基础功能介绍
+参考视频https://www.bilibili.com/video/av9310723
+
+
+Gitlab发送邮件（使用QQ邮箱）
+和用Python/PHP/JAVA的工具包的设置项没有什么不同。
+gitlab_rails['smtp_enable'] = true
+gitlab_rails['smtp_address'] = "smtp.exmail.qq.com" 官网的这个应该换成gitlab_rails['smtp_address'] = "smtp.qq.com"
+gitlab_rails['smtp_port'] = 465
+gitlab_rails['smtp_user_name'] = "xxxx@xx.com"
+gitlab_rails['smtp_password'] = "password"(指的是授权码)
+gitlab_rails['smtp_authentication'] = "login"
+gitlab_rails['smtp_enable_starttls_auto'] = true
+gitlab_rails['smtp_tls'] = true
+gitlab_rails['gitlab_email_from'] = 'xxxx@xx.com'
+gitlab_rails['smtp_domain'] = "exmail.qq.com"
+
+测试发送
+gitlab-rails console
+irb(main):003:0> Notify.test_email('destination_email@address.com', 'Message Subject', 'Message Body').deliver_now
    
    
     
