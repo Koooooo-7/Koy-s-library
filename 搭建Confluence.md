@@ -48,3 +48,7 @@ grant all on confluence.* to 'admin'@'localhost' identified by'admin';
 flush privileges;
 查看用户表
 select user,host,password from mysql.user;
+
+2.安装JDK1.8
+  之前有写过安装过程，[这里](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85JDK1.8u201)。
+  
