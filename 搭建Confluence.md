@@ -82,13 +82,13 @@ lsof -i:8090
 提示Jar successfully patched，并且生成了一个.bak文件
 然后改回原来的名字把原来的给换掉。
 ```
-然后继续安装，发现缺少mysql-connection-java的驱动jar包，
-根据Confluence[官网文档](https://confluence.atlassian.com/doc/database-jdbc-drivers-171742.html)说的，
-跑去阿里云的maven仓库下了一个5.1.42版本。
-JDBC链接，账号root密码123456
-测试链接发现报错
-~~不正确的隔离级别您的数据库必须使用'READ-COMMITTED'作为默认隔离级别~~
-按照[官网文档](https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html)我发现my.cnf配置我已经设置了，就用了下面的办法。
+然后继续安装，发现缺少mysql-connection-java的驱动jar包，  
+根据Confluence[官网文档](https://confluence.atlassian.com/doc/database-jdbc-drivers-171742.html)说的，  
+跑去阿里云的maven仓库下了一个5.1.42版本。  
+JDBC链接，账号root密码123456  
+测试链接发现报错  
+~~不正确的隔离级别您的数据库必须使用'READ-COMMITTED'作为默认隔离级别~~  
+按照[官网文档](https://confluence.atlassian.com/confkb/confluence-fails-to-start-and-throws-mysql-session-isolation-level-repeatable-read-is-no-longer-supported-error-241568536.html)我发现my.cnf配置我已经设置了，就用了下面的办法。  
 更改JDBC链接方式 jdbc:mysql://localhost/confluence?sessionVariables=tx_isolation='READ-COMMITTED'
 
 
