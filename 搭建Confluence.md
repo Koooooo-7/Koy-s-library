@@ -16,6 +16,7 @@ $ sudo systemctl enable mariadb
 $ sudo vim /etc/my/cnf 
 
 ```
+在[mysqld]下面添加如下
 init_connect='SET collation_connection =utf8_unicode_ci'
 init_connect='SET NAMES utf8'
 character-set-server=utf8
