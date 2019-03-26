@@ -47,9 +47,9 @@ grant all on confluence.* to 'admin'@'%' identified by 'admin';   允许远程�
 grant all on confluence.* to 'admin'@'localhost' identified by'admin';  允许本地登录
 ```
 权限刷新
-flush privileges;
+`flush privileges;`
 查看用户表
-select user,host,password from mysql.user;
+`select user,host,password from mysql.user;`
 
 2.安装JDK1.8
   之前有写过安装过程，[这里](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85JDK1.8u201)。
@@ -112,8 +112,11 @@ _参考https://blog.csdn.net/u013952133/article/details/81634978_
 ### 关闭Confluence sh /opt/atlassian/confluence/bin/stop-confluence.sh
 ### 开启Confluence sh /opt/atlassian/confluence/bin/start-confluence.sh
 
-
-
- 
-
+  
+全局语言可以直接设置成中文，在右上角"管理应用"中的东西真的是一应俱全阿，和WordPress有的一拼。  
+在健康检查的时候，发现在数据库检查中报错，表示max_allowed_packet和innodb_log_file_size设置过小。  
+发现max_allowed_packet放错了地方，应该放在[mysqld]下面。  
+参考https://confluence.atlassian.com/confkb/exceeds-max-allowed-packet-for-mysql-179443425.html  
+而innodb_log_file_size的配置需要先删除两个原来的配置日志文件，再配置。  
+参考https://confluence.atlassian.com/confkb/mysqlsyntaxerrorexception-row-size-too-large-658735905.html  
 
