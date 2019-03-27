@@ -59,3 +59,5 @@ ssh-keygen -t rsa -C "your_email"                     # 设置 ssh key
 cat ~/.ssh/id_rsa.pub                                 # 查看 ssh公钥
 ssh -T git@github.com                                 # 与 Github 进行验证
 ```
+
+原档来源。[chenjiandongx](https://github.com/chenjiandongx/Blog/blob/master/%E5%B8%B8%E7%94%A8%20Git%20%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86.md)
