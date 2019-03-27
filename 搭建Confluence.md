@@ -13,9 +13,10 @@ $ sudo systemctl enable mariadb
 ```
 ###### 配置文件
 解决中文乱码等问题
-$ sudo vim /etc/my.cnf 
+
 
 ```
+$ sudo vim /etc/my.cnf<配置文件，相当于windows的my.ini>
 在[mysqld]下面添加如下
 init_connect='SET collation_connection =utf8_unicode_ci'
 init_connect='SET NAMES utf8'
