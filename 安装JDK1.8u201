@@ -5,7 +5,7 @@ https://blog.csdn.net/fuyuwei2015/article/details/73195936
 官网下载JDK
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html < tar.gz>
 FTP传到/home/java/目录下
-解压 tar -zxvf jdk-8u11-linux-x64.tar.gz
+解压 tar -zxvf  jdk-8u201-linux-x64.tar.gz
 
 设置环境变量
 vim /etc/profile
