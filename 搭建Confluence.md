@@ -5,8 +5,8 @@ Confluence是一个团队wiki管理工具，可以归纳整理很多内容。
 系统  CentOS 7.2  
 安装 Confluence 6.14.1  
 ### 1.安装Mysql  
-```sudo yum install -y mariadb mariadb-server```
-启动并且开机启动
+```sudo yum install -y mariadb mariadb-server```   
+设置启动并且开机启动
 ```
 $ sudo systemctl start mariadb  
 $ sudo systemctl enable mariadb
@@ -75,11 +75,11 @@ lsof -i:8090
 
 ### 破解过程
 ```
-参考https://blog.csdn.net/XunCiy/article/details/81981944
+参考https://blog.csdn.net/XunCiy/article/details/81981944  
     https://blog.csdn.net/Dsky7/article/details/87717684
 破解的生成器：https://pan.baidu.com/s/1pJX9VjovMiTl0o1VyAaitw   m2jz   
 具体破解步骤
-运行jira_keygen.jar，
+运行confluence_keygen.jar，
 将ServerID粘贴填入，
 姓名Name、邮箱Email、组织Organization可随意填写，会作为系统信息显示，但不影响破解，
 然后点击.gen!，生成key。
