@@ -13,7 +13,7 @@ $ sudo systemctl enable mariadb
 ```
 ###### 配置文件
 解决中文乱码等问题
-$ sudo vim /etc/my/cnf 
+$ sudo vim /etc/my.cnf 
 
 ```
 在[mysqld]下面添加如下
