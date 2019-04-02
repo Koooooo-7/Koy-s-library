@@ -1,4 +1,4 @@
-# Koy' library
+# Koy' library :books:
 
 * 杂货铺or图书馆。  
 * 记录自己用到的遇到过的各种坑。  
@@ -37,4 +37,5 @@ _Python代码规范_
 
 ## 杂货记录
 目前在用的图床  :rainbow:
-[国外一个图床，希望不会挂掉]Orz(https://sm.ms/)
+[国外一个图床，希望不会挂掉]Orz(https://sm.ms/)  
+[github-emoji-list](https://segmentfault.com/a/1190000009649780)
