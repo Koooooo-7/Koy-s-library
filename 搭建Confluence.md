@@ -4,6 +4,10 @@ Confluence是一个团队wiki管理工具，可以归纳整理很多内容。
 
 系统  CentOS 7.2  
 安装 Confluence 6.14.1  
+##### 关闭Confluence sh /opt/atlassian/confluence/bin/stop-confluence.sh
+##### 开启Confluence sh /opt/atlassian/confluence/bin/start-confluence.sh
+##### 重启  /etc/init.d/confluence restart  
+
 ### 1.安装Mysql  
 ```sudo yum install -y mariadb mariadb-server```   
 设置启动并且开机启动
@@ -111,8 +115,7 @@ _参考https://blog.csdn.net/u013952133/article/details/81634978_
 
 然后设置管理员账号，完成！！！
 
-### 关闭Confluence sh /opt/atlassian/confluence/bin/stop-confluence.sh
-### 开启Confluence sh /opt/atlassian/confluence/bin/start-confluence.sh
+
 
   
 全局语言可以直接设置成中文，在右上角"管理应用"中的东西真的是一应俱全阿，和WordPress有的一拼。  
