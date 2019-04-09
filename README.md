@@ -33,7 +33,8 @@ _Python代码规范_
 ## 咸鱼生活
 &emsp;[追番小记](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E3%82%A2%E3%83%8B%E3%83%A1ing.md)   
 
-
+## 胡乱安装
+&emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum)  
 
 ## 杂货记录
 目前在用的图床  :rainbow:
