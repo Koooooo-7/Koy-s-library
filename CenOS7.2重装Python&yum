@@ -1,4 +1,4 @@
-手贱，误删了python中关于ldap的包，结果导致yum不可用，报错。
+手贱安装ldap时卸载了一次相关的ldap组件，结果导致yum不可用，报错。
 There was a problem importing one of the Python modules
 required to run yum. The error leading to this problem was:
 
