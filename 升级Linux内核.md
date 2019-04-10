@@ -4,8 +4,9 @@ CentOS7.2 装过LDAP测试之后，就空下来的一台小机机。
 [参考1]（https://blog.csdn.net/kikajack/article/details/79396793）  
 [参考2]（https://blog.csdn.net/qq_27281257/article/details/82049634）
 <hr>
-### 1 升级yum仓库
-`yum -y update`
+
+### 1 升级yum仓库  
+`yum -y update`  
 
 ### 2 安装elrepo的yum源
 ` rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
@@ -49,5 +50,5 @@ done
 重新检查内核版本 `uname -r`
 
 ### 5 卸载旧的内核（略）
-先让我去试试装上Docker吧。：laugh：
+先让我去试试装上Docker吧。:dog：
 
