@@ -13,8 +13,8 @@
 &emsp;[mitmproxy单机配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/mitmproxy%E8%AF%95%E7%8E%A9)  
 &emsp;[GitLab搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85Gitlab.md)  
 &emsp;[Confluence搭建](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%90%AD%E5%BB%BAConfluence.md)  
-&emsp;[Confluence整合Jira](https://github.com/Koooooo-7/Koy-s-library/blob/master/confluence%E6%95%B4%E5%90%88Jira.md)  
-
+&emsp;[Confluence整合Jira](https://github.com/Koooooo-7/Koy-s-library/blob/master/confluence%E6%95%B4%E5%90%88Jira.md)    
+&emsp;[安装Docker](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85Docker.md)  
 
 ### 配置配置
 &emsp;[iptables配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/iptables%E9%85%8D%E7%BD%AE)  
