@@ -4,7 +4,7 @@
 
 ### 1 添加源
 ` yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`  
-这块可以换成国内的源，比如老马的
+这块可以换成国内的源，比如老马的  
 `yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo`
 
 ### 2 查看源里可以安装的所有docker版本
