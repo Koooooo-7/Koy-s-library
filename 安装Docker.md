@@ -3,7 +3,7 @@
 [参考2](https://www.cnblogs.com/liuxiutianxia/p/8857141.html)
 
 ### 1 添加源
-` yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
+` yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`  
 这块可以换成国内的源，比如老马的
 `yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo`
 
@@ -21,6 +21,6 @@
 systemctl start docker
 sudo systemctl enable docker
 看看版本，检查是否安装成功！
-docker version
-`
+docker version  
+`  
 :dog: :dog: :dog:
