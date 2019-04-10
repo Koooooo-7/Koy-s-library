@@ -34,8 +34,8 @@ _Python代码规范_
 &emsp;[追番小记](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E3%82%A2%E3%83%8B%E3%83%A1ing.md)   
 
 ## 胡乱安装
-&emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum) 
-&emsp;[升级Linux内核]（https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md）  
+&emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum)   
+&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)  
 
 ## 杂货记录
 目前在用的图床  :rainbow:
