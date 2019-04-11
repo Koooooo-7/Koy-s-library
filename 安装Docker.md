@@ -1,4 +1,5 @@
-要求Linux内核3.10以上，升级了Linux内核之后，安装Docker，感觉过程很容易阿。
+要求Linux内核3.10以上，升级了Linux内核之后，安装Docker。
+[官方文档](https://docs.docker-cn.com/)
 [参考1](https://www.cnblogs.com/yufeng218/p/8370670.html)
 [参考2](https://www.cnblogs.com/liuxiutianxia/p/8857141.html)
 
