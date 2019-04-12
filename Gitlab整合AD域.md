@@ -1,5 +1,6 @@
 #### 1.进入gitlab配置文件gitlab.rb中。
-```gitlab_rails['ldap_enabled'] = true  //开启 LDAP服务
+```
+gitlab_rails['ldap_enabled'] = true  //开启 LDAP服务
 gitlab_rails['ldap_servers'] = {  //服务配置
 'main' => {
   'label' => 'GitLab AD',  //配置名称 自定义就好
@@ -17,10 +18,15 @@ gitlab_rails['ldap_servers'] = {  //服务配置
   }
 }
 ```
+ 
+#### 2.重新加载配置  
+`gitlab-ctl reconfigure`
+ 
+#### 3.检查用户是否可以检出用户  
+     `gitlab-rake gitlab:ldap:check `
 
-#### 2.重新加载配置`gitlab-ctl reconfigure`。
-#### 3.检查用户是否可以检出用户`gitlab-rake gitlab:ldap:check `。
 
+参考文档：  
 https://docs.gitlab.com/ee/administration/auth/how_to_configure_ldap_gitlab_ce/
 https://docs.gitlab.com/ee/administration/auth/how_to_configure_ldap_gitlab_ee/
 https://www.linuxidc.com/Linux/2018-01/150516.htm
