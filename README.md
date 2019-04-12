@@ -18,7 +18,7 @@
 
 ### 配置配置
 &emsp;[iptables配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/iptables%E9%85%8D%E7%BD%AE)  
-&emsp;[服务器root权限配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B0%8F%E8%B4%B4%E5%A3%AB) &emsp;[Gitlab整合AD域](https://github.com/Koooooo-7/Koy-s-library/blob/master/Gitlab%E6%95%B4%E5%90%88AD%E5%9F%9F.md)     
+&emsp;[服务器root权限配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B0%8F%E8%B4%B4%E5%A3%AB)<br>  &emsp;[Gitlab整合AD域](https://github.com/Koooooo-7/Koy-s-library/blob/master/Gitlab%E6%95%B4%E5%90%88AD%E5%9F%9F.md)     
 
       
 ### 代码代码  
