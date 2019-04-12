@@ -20,7 +20,12 @@
 &emsp;[iptables配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/iptables%E9%85%8D%E7%BD%AE)  
 &emsp;[服务器root权限配置](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B0%8F%E8%B4%B4%E5%A3%AB)<br>  &emsp;[Gitlab整合AD域](https://github.com/Koooooo-7/Koy-s-library/blob/master/Gitlab%E6%95%B4%E5%90%88AD%E5%9F%9F.md)     
 
-      
+
+### 胡乱安装
+&emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum)   
+&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)  
+
+
 ### 代码代码  
 
 _Python代码规范_
@@ -30,12 +35,9 @@ _Python代码规范_
 &emsp;[图灵机器人自动回复钉钉](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%9B%BE%E7%81%B5%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%92%89%E9%92%89%E5%9B%9E%E5%A4%8D)  
 &emsp;[落网所有专辑封面爬取](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E8%90%BD%E7%BD%91%E9%9F%B3%E4%B9%90%E6%89%80%E6%9C%89%E4%B8%93%E8%BE%91%E5%B0%81%E9%9D%A2)  
 
-## 咸鱼生活
+### 咸鱼生活
 &emsp;[追番小记](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E3%82%A2%E3%83%8B%E3%83%A1ing.md)   
 
-## 胡乱安装
-&emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum)   
-&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)  
 
 ## 杂货记录
 目前在用的图床  :rainbow:
