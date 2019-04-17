@@ -2,9 +2,9 @@
 所以就就用Python去写脚本，再用Crontab定时任务去跑，一个超级简单需要不断完善的伪Demo。
 
 #### 使用模块
-traceback  异常追溯记录模块
-pexpect    多种命令自动交互模块
-使用了scp命令进行文件传输
+traceback  异常追溯记录模块  
+pexpect    多种命令自动交互模块  
+使用了scp命令进行文件传输  
 
 ```
 import os
