@@ -32,7 +32,8 @@
 
 _Python代码规范_
 ###### [PEP-8中文版](https://www.cnblogs.com/ajianbeyourself/p/4377933.html#_label0)
-###### [PEP-8中文版2](https://wiki.woodpecker.org.cn/moin/PythonCodingRule)
+###### [PEP-8中文版2](https://wiki.woodpecker.org.cn/moin/PythonCodingRule)  
+###### [Git提交规范](https://www.oschina.net/news/69705/git-commit-message-and-changelog-guide?from=20160110)  
 
 &emsp;[图灵机器人自动回复钉钉](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%9B%BE%E7%81%B5%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%92%89%E9%92%89%E5%9B%9E%E5%A4%8D)  
 &emsp;[落网所有专辑封面爬取](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E8%90%BD%E7%BD%91%E9%9F%B3%E4%B9%90%E6%89%80%E6%9C%89%E4%B8%93%E8%BE%91%E5%B0%81%E9%9D%A2)  
