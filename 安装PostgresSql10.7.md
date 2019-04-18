@@ -20,7 +20,6 @@
   `yum install https://download.postgresql.org/pub/repos/yum/11/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm -y  `
 
 - [ ] 查看可用的源 `yum list | grep postgresql`
-- [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
 
 
 ### 2. 安装需要的包
