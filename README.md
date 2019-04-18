@@ -25,8 +25,8 @@
 
 ### 胡乱安装
 &emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum)   
-&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)  
-
+&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)    
+&emsp;[安装PostgreSql](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85PostgresSql10.7.md)  
 
 ### 代码代码  
 
