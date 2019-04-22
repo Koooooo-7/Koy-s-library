@@ -25,7 +25,8 @@
 
 ### 胡乱安装
 &emsp;[重新安装Python和yum](https://github.com/Koooooo-7/Koy-s-library/blob/master/CenOS7.2%E9%87%8D%E8%A3%85Python&yum)   
-&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)    
+&emsp;[升级Linux内核](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%8D%87%E7%BA%A7Linux%E5%86%85%E6%A0%B8.md)     
+&emsp;[centOS安装pip](https://jingyan.baidu.com/article/455a99507b0f7da16627780d.html)    
 &emsp;[安装PostgreSql](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E5%AE%89%E8%A3%85PostgresSql10.7.md)    
 &emsp;[Docker中安装Pg](https://github.com/Koooooo-7/Koy-s-library/blob/master/Docker%E5%AE%89%E8%A3%85PostgreSql.md)  
 
@@ -47,5 +48,4 @@ _Python代码规范_
 目前在用的图床  :rainbow:
 [国外一个图床，希望不会挂掉]Orz(https://sm.ms/)  
 [github-emoji-list](https://segmentfault.com/a/1190000009649780)  
-[centOS安装pip](https://jingyan.baidu.com/article/455a99507b0f7da16627780d.html)  
 [在用的一个Markdown在线编辑器](https://www.zybuluo.com/mdeditor)
