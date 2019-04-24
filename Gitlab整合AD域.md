@@ -21,7 +21,8 @@ gitlab_rails['ldap_servers'] = {  //服务配置
   }
 }
 ```
-~~以上代码废弃~~
+~~以上代码废弃~~  
+
 **重新配置**
 在girlab.rb( /etc/gitlab/gitlab.rb)中找到`### Gitlab自带的LDAP默认配置项的位置`进行如下配置，或者自己直接重新写也可以。
 ```
