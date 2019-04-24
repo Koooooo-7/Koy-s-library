@@ -47,7 +47,7 @@ docker run --name pgslave -e POSTGRES_PASSWORD=password -p 54444:5432 -d postgre
 
 从库IP信息
 
-`docker inspect pgslave|grep IPAddress`  (我的是172.17.0.3)`
+`docker inspect pgslave|grep IPAddress`  (我的是172.17.0.3)
 
 主库配置文件地址
 
@@ -59,7 +59,7 @@ docker run --name pgslave -e POSTGRES_PASSWORD=password -p 54444:5432 -d postgre
 
 `docker inspect pgslave|grep Source`
 
-我的是`/var/lib/docker/volumes/从库名称噼里啪啦一大串你懂的。/_data
+我的是`/var/lib/docker/volumes/从库名称噼里啪啦一大串你懂的。/_data`
 
 ------
 
@@ -195,7 +195,7 @@ primary_conninfo = 'host=172.17.0.2 port=5432 user=replication password=postgres
 
  进入主库的配置文件postgres.conf。
 
-直接把`synchronous_standby_names = ‘*’`即可，看注释就知道为什么啦。
+直接把`synchronous_standby_names = '*'`即可，看注释就知道为什么啦。
 
 或者配置成你在recovery.conf中的application_name对应的地址。
 
