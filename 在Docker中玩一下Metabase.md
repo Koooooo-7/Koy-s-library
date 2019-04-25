@@ -53,6 +53,55 @@ a7652d1894196420cd2efa791c909708e69d479343f02505df9fbe0e71123108
 ###### 3.数据引用
 
 官方想要获取信息拿到用户体验balabala，以及订阅他们的推送，看你自己。
+我就直接接一下我本地安装的pg就完事数据库了呗，或者选择等下再添加数据源。
+
+但是我不这么干，我要连接到我电脑本地的mysql！
+
+首先就是要mysql开放权限允许远程嘛(记得windows的防火墙端口开放3306喔。)
+
+`cmd`->`mysql -u root -p回车`常规操作进入mysql。
+
+然后选择mysql自己的库`use mysql`回车，就好啦。
+
+看看都允许了哪些链接`select host, user from user;`
+
+都是`localhost`纳尼:question:。
+
+然后就是加入远程连接啦。
+
+- 最简粗暴的办法是这样的
+
+```
+允许任何用户使用 root/密码 连接
+grant all privileges on *.* to 'root'@'%' identified by '密码' with grant option;
+flush  privileges;
+```
+
+- 文明一点是这样的
+
+```
+允许用户root从ip为192.168.1.3的主机连接到mysql服务器，并使用root作为密码
+grant all privileges on *.* to 'root'@'192.168.1.3' identified by 'root' with grant option;
+flush privileges;
+```
+
+- 再谨慎一点是这样的
+
+```
+允许用户root从ip为192.168.1.3的主机连接到mysql服务器的dk数据库，并使用root作为密码
+grant all privileges on dk.* to 'root'@'192.168.1.3' identified by 'root' with grant option;
+flush privileges;
+```
+
+记得后面的`flush privileges;`很重要。
+
+供你选择。
+
+我选择的是`grant all privileges on metabase.* to 'root'@'192.168.*.*' identified by '123456' with grant option;`:dog:。
+
+刷新权限`flush privileges`;
+
+
 
 然后点击
 
