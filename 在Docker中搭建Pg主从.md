@@ -219,3 +219,12 @@ primary_conninfo = 'host=172.17.0.2 port=5432 user=replication password=postgres
 - [其他参考1](<https://www.cnblogs.com/mchina/archive/2012/05/26/2518350.html>)
 - [其他参考2](<https://yq.aliyun.com/ask/3177>)
 
+Tips:city_sunrise:
+
+进入容器内部执行指令
+
+`docker exec`  -it [参数]    [需要执行的 指令]。
+
+比如进入从库里面。
+
+`docker exec -it postslave   /bin/bash`
