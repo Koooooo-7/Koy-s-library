@@ -49,4 +49,5 @@ _Python代码规范_
 目前在用的图床  :rainbow:
 [国外一个图床，希望不会挂掉]Orz(https://sm.ms/)  
 [github-emoji-list](https://segmentfault.com/a/1190000009649780)  
-[在用的一个Markdown在线编辑器](https://www.zybuluo.com/mdeditor)
+[在用的一个Markdown在线编辑器](https://www.zybuluo.com/mdeditor)  
+[搭建主从复制pg的一篇参考](https://gridscale.io/en/community/tutorials/postgresql-10-master-slave-replication/)
