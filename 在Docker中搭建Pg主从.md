@@ -228,3 +228,19 @@ Tips:city_sunrise:
 比如进入从库里面。
 
 `docker exec -it postslave   /bin/bash`
+
+
+#### 在不同服务器之间搭建主从
+基本过程一致，默认的数据目录是在` /var/lib/pgsql/10/data/ `下。  
+在进行基础备份的时候，使用的命令是。
+```
+ pg_basebackup -h 192.168.0.* -U replication  -F p  -P -R -D /var/lib/pgsql/10/data/ -l replicationbackup 
+ 192.168.0.*是主库IP地址 
+```
+基础备份完毕之后，从库这时候数据文件的默认权限是root，需要重新给到postgres用户。
+`chown -R postgres.postgres /var/lib/pgsql/10/data/ `
+不然会无法重启从库。
+其他流程大致一样。
+更详细的配置可以在参考中了解。
+[参考1](https://blog.csdn.net/germany15914326114/article/details/81196778)
+[参考2](https://www.cnblogs.com/aegis1019/p/8870251.html)
