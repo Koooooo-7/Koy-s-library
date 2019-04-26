@@ -8,7 +8,17 @@
 
 - 自己的一些搭建过程。
 
-  [TOC]
+------
+
+ * [Koy' library :books:](#koy-library-books)
+    * [搭建搭建**​ :house:**](#搭建搭建​-house)
+    * [配置配置​ :wrench:](#配置配置​-wrench)
+    * [胡乱安装 :cyclone:](#胡乱安装-cyclone)
+    * [代码代码 :computer:](#代码代码-computer)
+    * [奇珍异宝 :white_flower:](#奇珍异宝-white_flower)
+    * [咸鱼生活 :guitar:](#咸鱼生活-guitar)
+    * [杂货小铺:rainbow:](#杂货小铺rainbow)
+
 
   
 
