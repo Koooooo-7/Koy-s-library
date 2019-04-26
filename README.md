@@ -45,7 +45,8 @@ _Python代码规范_
 &emsp;[追番小记](https://github.com/Koooooo-7/Koy-s-library/blob/master/%E3%82%A2%E3%83%8B%E3%83%A1ing.md)   
 
 ### 奇珍异宝:white_flower:
-&emsp;[数据库内核月报-taobao](http://mysql.taobao.org/monthly/)
+&emsp;[数据库内核月报-taobao](http://mysql.taobao.org/monthly/)  
+&emsp;[emoji大全](https://emojipedia.org/)
 
 ## 杂货记录
 目前在用的图床  :rainbow:
