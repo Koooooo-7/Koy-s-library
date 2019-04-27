@@ -99,9 +99,10 @@ array (size=1)
 
 1.在楼上get到了一个[在线演示代码](https://www.dooccn.com//php7/#id/46ae6d604aee73cdd0e1c3ffce4497cf)的网站，赚了阿。
 
-2.一个大佬用索引写的代码，感觉很厉害。还有github的一个Gist服务，和gitlab的Snippets挺像的。
+2.一个大佬用索引写的代码，感觉很厉害,可是没有了，他是用github的一个Gist服务，和gitlab的Snippets挺像的。
 
 
-
+总结：
+感觉对于递归体的思路还算比较快，但是对递归头的处理不太好，还是要多写，才会有感觉！
 
 
