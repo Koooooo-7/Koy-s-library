@@ -46,12 +46,17 @@ $a，$b都是不定长的，是要以$a中元素在$subject中的值为键以及
      */
     function myArrayA($subject,$a,$b){
         $arr = [];
+        //$a递归完了，开始整b了
         if (empty($a)){
             $tmp = myArrayB($subject,$b,$b);
             return $tmp;
         }
+        // 拿出来$a的第一个元素
         $point = array_shift($a);
+        //找到对应的键值作为key
         $key = $subject[$point];
+        //移除在subject中对应的键值 ，突然感觉好像不用这么干，只针对$a继续做操作好像也是可以的阿，之后还要看看。
+        //为了可以移除数组，人为构造了一个数组，键值都为1。
         $subject = array_diff($subject,[$point=>1]);
         $arr[$key] =  myArrayA($subject,$a,$b);
         return $arr;
