@@ -91,7 +91,7 @@ $a，$b都是不定长的，是要以$a中元素在$subject中的值为键以及
 ```
 其实楼上的代码是我直接拿了以前的一个项目Demo启动wamp了在首页写的23333，
 之后从控制器取出来到那个可以在线测试代码的页面调整的格式Orz。
-在框架里面的dump()是TP对var_dump()的封装，得换。
+在框架里面的dump()是TP对var_dump()的封装，得换，this关键字也得干掉。
 
 D:\wamp64\www\我的项目地址不能看\controller\IndexController.php:33:
 array (size=1)
