@@ -56,8 +56,11 @@ $a，$b都是不定长的，是要以$a中元素在$subject中的值为键以及
         //找到对应的键值作为key
         $key = $subject[$point];
         //移除在subject中对应的键值 ，突然感觉好像不用这么干，只针对$a继续做操作好像也是可以的阿，之后还要看看。
-        //为了可以移除数组，人为构造了一个数组，键值都为1。
-        $subject = array_diff($subject,[$point=>1]);
+        //为了可以移除数组，人为构造了一个数组，键值都为1。   
+        //优化： 不用这一句去构造数组移除subject，因为是以a为参考去拿subject中对应的值，a的元素是在递减的，在subject中存不存在并没有影响。
+        //$subject = array_diff($subject,[$point=>1]);
+        
+        
         $arr[$key] =  myArrayA($subject,$a,$b);
         return $arr;
 
